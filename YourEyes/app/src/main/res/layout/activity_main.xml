@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnDisaster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="기상특보 알리미"/>
+    <!--android:background="@android:color/transparent"-->
+    <!--android:drawableLeft="@drawable/weather" />-->
+
+    <Button
+        android:id="@+id/btnDust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="미세먼지 알리미"/>
+    <!--android:background="@android:color/transparent"-->
+    <!--android:drawableLeft="@drawable/dust" />-->
+
+</LinearLayout>
+
+    <!--<fragment-->
+    <!--android:id="@+id/map"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--class="com.google.android.gms.maps.MapFragment" />-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Switch
+            android:id="@+id/TTSswitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TTS"/>
+        <!--android:background="@android:color/transparent"-->
+        <!--android:drawableLeft="@drawable/alarm" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_outPut"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="출력 공간"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/onWhere"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0"-->
+        <!--android:text="TextView"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0.5"-->
+        <!--android:text="결과창"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음성인식"/>
+        <!--android:background="@android:color/transparent"-->
+        <!--android:drawableLeft="@drawable/mic2"/>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>
