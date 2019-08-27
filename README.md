@@ -28,7 +28,7 @@
 ## Flow  
 ![image](https://user-images.githubusercontent.com/38939634/63690856-af8d8a00-c848-11e9-9831-0e5cf9233a44.png)  
 
-![image](https://user-images.githubusercontent.com/38939634/63691550-79510a00-c84a-11e9-940e-00438cd1095a.png)
+![image](https://user-images.githubusercontent.com/38939634/63691550-79510a00-c84a-11e9-940e-00438cd1095a.png)  
 완성본의 경우  
 1. Click Button Detecking Voice and Captured Image
 2. Saved Capture Image
