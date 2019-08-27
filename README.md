@@ -7,7 +7,7 @@
 - Jquery 
 - MicroSoft Azure B1S Instance  
 - MicroSoft Azure Blob Storage  
-- Window 10 / Mac / Linux Ubuntu Server 16.04(B1S)  
+- Window 10 / Mac / Linux Ubuntu Server 18.04.01 LTS(B1S)  
 - Putty  
 - Using API  
   > Azure Computer Vision API  
