@@ -3,8 +3,8 @@
 ## 시각장애인을 위한 보조 도우미 어플리케이션  
 ### 개발 환경  
 #### Server-side  
-- Python 
-- Jquery 
+- Python / Flask
+- Jquery / Beutiful Soap   
 - MicroSoft Azure B1S Instance  
 - MicroSoft Azure Blob Storage  
 - Window 10 / Mac / Linux Ubuntu Server 18.04.01 LTS(B1S)  
@@ -19,7 +19,7 @@
 - Android SDK 23 or later  
 - Android Studio  
 - Galaxy Tab 8.0  
-- Retrofit2 / HttpUrlConnection  
+- Retrofit2 / HttpUrlConnection / Gson  
 - Using API  
   > Google Sppech API (TTS/STT)  
     Google Geocoder API  
@@ -47,18 +47,39 @@
 ## 클라이언트 처리  
 ![image](https://user-images.githubusercontent.com/38939634/63691656-ca60fe00-c84a-11e9-927b-9def9f0d6378.png)  
 android location manager를 이용해 알아낸 네트워크 상 위치(위도, 경도)를 Revers Geocoding을 통해   
-문자열 주소로 변환 및 버튼 클릭에 따라 공공 데이터를 얻어왔음  
+문자열 주소로 변환 및 버튼 클릭에 따라 데이터를 전송  
 > [Google text-to-speech](https://cloud.google.com/text-to-speech/)  
   [Google speech-to-text](https://cloud.google.com/speech-to-text/)  
   [Google Geocoding](https://developers.google.com/maps/documentation/geocoding/intro)  
-  [공공 데이터포털 대기오염 API](https://www.data.go.kr/dataset/15000581/openapi.do)  
-  [공공 데이터포털 날씨조회 API](https://www.data.go.kr/dataset/15000099/openapi.do)  
+  
+![image](https://user-images.githubusercontent.com/38939634/63852941-6f5b1280-c9d4-11e9-830b-51d21a62b9d5.png)  
+서버에서 오는 정확한 파라미터 갯수를 모르기때문에 메소드 파라미터를 배열로 받는 ... 문법을 사용했음  
+
+![image](https://user-images.githubusercontent.com/38939634/63853083-c52fba80-c9d4-11e9-8e1c-860ec1c84d8b.png)  
+문자열로 받아온 위치정보에서 필요한 데이터만을 추출  
+
+  
   
 ### 네트워크 관련  
 HttpUrlConnction과 Retrofit을 둘 다 사용해봤음  
 Retrofit의 경우 자동적으로 Async Task를 통해 HTTP 커넥션을 생성함  
 HttpUrlConnection의 경우 별개로 Async Task를 생성해주지 않으면  UI Thread Blocking이 일어남  
 별도로 작업 스레드를 설정해줘야 백그라운드에서 HTTP 커넥션이 이루어짐  
+
+### 서버 처리  
+![image](https://user-images.githubusercontent.com/38939634/63853229-1c358f80-c9d5-11e9-8498-971f35ba281d.png)  
+API Key를 METADATA로 별도 관리하고, 라우트를 통해 요청을 처리  
+
+![image](https://user-images.githubusercontent.com/38939634/63853370-7f272680-c9d5-11e9-981f-728d9bd60531.png)  
+- Computer Vision API 사용과정  
+  객체 인식에 대한 여러 설정을 지정하고, 결과값을 JSON으로 리턴받아 파싱  
+
+![image](https://user-images.githubusercontent.com/38939634/63853473-bf86a480-c9d5-11e9-92d7-363cc272c31a.png)  
+- Naver PAPAGO NMT 사용과정  
+  문자는 UTF-8 인코딩 방식을 사용, Request Content Header는 x-www-form-urlencoded 형식  
+  > x-www-form-urlencoded  
+    페이로드가 적을 때(담아야하는 정보) 사용  
+
 
 
 ## 프로젝트에 관한 아쉬운 점  
