@@ -8,7 +8,7 @@
 - MicroSoft Azure B1S Instance  
 - MicroSoft Azure Blob Storage  
 - Window 10 / Mac / Linux Ubuntu Server 18.04.01 LTS(B1S)  
-- Putty  
+- Putty(.ppk 공개 퍼블릭 키)  
 - Using API  
   > Azure Computer Vision API  
     Naver PAPAGO NMT Translater API  
