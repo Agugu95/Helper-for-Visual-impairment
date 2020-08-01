@@ -80,7 +80,10 @@ API Key를 METADATA로 별도 관리하고, 라우트를 통해 요청을 처리
   > x-www-form-urlencoded  
     페이로드가 적을 때(담아야하는 정보) 사용  
 
-
+## 기능 테스팅  
+![](https://images.velog.io/images/agugu95/post/ac0f4319-e05c-493a-bd26-2ae64b732c1d/image.png)
+- 기능 테스팅 성공에 대한 자료를를 찾아봐도 정작 애플리케이션에 대한 제대로 된 사진이 없음  
+앞으로는 이런 점도 새겨두어야겠다.   
 
 ## 프로젝트에 관한 아쉬운 점  
 - 문서화가 제대로 되어있지 않던 점  
